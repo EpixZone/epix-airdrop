@@ -117,6 +117,19 @@ forge test -vvv   # Run tests
 forge fmt         # Format
 ```
 
+## Deployment
+
+```bash
+# Set up .env with PRIVATE_KEY, RPC_URL, and EXPLORER_URL
+cp .env.example .env
+
+# Deploy
+forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast
+
+# Verify on Blockscout
+./verify.sh <contract_address> EpixAirdrop
+```
+
 ## License
 
 MIT
