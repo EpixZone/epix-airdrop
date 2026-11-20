@@ -122,6 +122,7 @@ forge fmt         # Format
 ```bash
 # Set up .env with PRIVATE_KEY, RPC_URL, and EXPLORER_URL
 cp .env.example .env
+source .env
 
 # Deploy
 forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast
@@ -129,6 +130,12 @@ forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast
 # Verify on Blockscout
 ./verify.sh <contract_address> EpixAirdrop
 ```
+
+## Contract Addresses
+
+| Network | Address |
+|---------|---------|
+| Mainnet (chain ID 1916) | `0x3BDB4DB4B960b5679f22AA5122A31a4E9f38A86E` |
 
 ## License
 
